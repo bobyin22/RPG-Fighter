@@ -4,8 +4,8 @@ function createPlayer(name, hp, mp) {
     hp: hp,
     mp: mp,
     cure: function(hp) {
-      // write your code here
-      // hint: 1. 在動手寫 code 之前，試著先列出有哪些可能性，再設計 if-else 邏輯 2. 魔法師和戰士補的血量不同，需要根據不同的補血量扣除不同的 MP
+      //1. 在動手寫 code 之前，試著先列出有哪些可能性，再設計 if-else 邏輯 
+      //2. 魔法師和戰士補的血量不同，需要根據不同的補血量扣除不同的 MP
 
 
       //大if判斷 有血沒血 
@@ -28,7 +28,7 @@ function createPlayer(name, hp, mp) {
     },
     attack: function(enemy) {
       // write your code here
-      // hint: 在動手寫 code 之前，試著先列出有哪些可能性，再設計 if-else 邏輯
+      // 在動手寫 code 之前，試著先列出有哪些可能性，再設計 if-else 邏輯
       const damage = Math.floor(Math.random() * 100) + 1   //計算攻擊量 0<x0.9999  -> 1<x<101
       enemy.hp -= damage //無論如何會先扣血攻擊別人血量  
 
